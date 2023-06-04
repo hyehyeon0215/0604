@@ -21,5 +21,8 @@ $(".notice ul li").eq(0).on("click", function() {
 
 $("#close").on("click", function(){
     $(".popup, .popupBg").css({"display" : "none"});
-
 })
+
+
+$("#gnb>li").on("mouseover",function(){$(this).children(".sub").stop().slideDown()});
+$("#gnb>li").on("mouseleave",function(){$(this).children(".sub").stop().slideUp()});

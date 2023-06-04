@@ -75,7 +75,48 @@ header h1 {
     height: 100px;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#gnb {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#gnb>li>a {
+    display: block;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #000;
+    font: bold 18px/60px "맑은 고딕";
+    background-color: rgba(255, 0, 191, 0.355);
+}
+
+#gnb>li:last-child >a {
+    border-bottom: none;
+}
+
+#gnb>li:hover >a {
+    background-color: #000;
+    color: #fff;
+}
+
+.sub {
+    display: none;
+    width: 100%;
+}
+
+.sub>li>a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font: 16px/40px "맑은 고딕";
+}
+
+.sub>li:hover {
+    background-color: #e7e7e7;
 }
 
 
@@ -133,13 +174,84 @@ main {
     flex: 2;
 }
 
+.notice>.content {
+    padding: 5px;
+}
+
+.notice>.content>ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.notice>.content>ul>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.notice>.content>ul>li:nth-of-type(odd) {
+    background-color: #f7f7f7;
+}
+
+.notice>.content>ul>li:hover {
+    background-color: #e7e7e7;
+}
+
+
+.notice>.content>ul>li>a {
+    font: 15px/1 "맑은 고딕";
+}
+
+.notice>.content>ul>li>span {
+    font: 8px/1 "맑은 고딕";
+}
+
 .gallery {
     flex: 1;
 }
 
+.gallery>.content {
+    padding: 5px;
+    overflow: hidden;
+}
+
+.gallery>.content>ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 5px;
+    
+}
+
+.gallery>.content>ul>li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
 .baro {
     flex: 1;
-    background-image: url(images/baro.jpg);
+    background-image: url(/images/baro.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.baro p {
+    font: 14px/1 "맑은 고딕";
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.baro span {
+    font: 14px/1 "맑은 고딕";
+    color: #fff;
 }
 
 footer {
@@ -169,6 +281,7 @@ footer {
     height: 50px;
     display: flex;
     gap: 10px;
+
 }
 
 .footer_wrap .family_site {
