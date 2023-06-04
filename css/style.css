@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box; color: #333;}
+ul, li {list-style: none;}
+a {text-decoration: none;}
+
+
+.popupBg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.07);
+    z-index: 7;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    min-height: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 8;
+}
+
+.popup h1{
+    font: bold 18px/1 'arial';
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.popup p {
+    font: 16px/2 'arial';
+    margin-bottom: 50px;
+}
+
+.popup button {
+    position: absolute;
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.wrap {
+    width: 1000px;
+    height: 650px;
+    display: flex;
+}
+
+header {
+    width: 250px;
+    height: 100%;
+}
+
+header h1 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+main {
+    width: 750px;
+    height: 100%;
+}
+
+#slide {
+    width: 100%;
+    height: 350px;
+}
+
+#slide .frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#slide .frame li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#contentBox {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 10px;
+}
+
+#contentBox article .tab {
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+}
+
+#contentBox article .content {
+    width: 100%;
+    height: 155px;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.notice {
+    flex: 2;
+}
+
+.gallery {
+    flex: 1;
+}
+
+.baro {
+    flex: 1;
+    background-image: url(images/baro.jpg);
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: #eee;
+}
+
+.copy {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_wrap {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_wrap .sns ul {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer_wrap .family_site {
+    width: 100%;
+    height: 50px;
+}
+
+#family_site {
+    padding: 5px 15px;
+    border-radius: 5px;
+}
